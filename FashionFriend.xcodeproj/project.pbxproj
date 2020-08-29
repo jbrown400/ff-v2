@@ -14,6 +14,11 @@
 		D079E72624F9618300063428 /* AddClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E72524F9618300063428 /* AddClothingViewController.swift */; };
 		D079E72824F9619100063428 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E72724F9619100063428 /* ProfileViewController.swift */; };
 		D079E72A24F96EB600063428 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E72924F96EB600063428 /* SocialViewController.swift */; };
+		D079E72C24FAA20500063428 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D079E72B24FAA20500063428 /* GoogleService-Info.plist */; };
+		D079E72E24FAA71900063428 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E72D24FAA71900063428 /* DatabaseManager.swift */; };
+		D079E73024FAA72E00063428 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E72F24FAA72E00063428 /* AuthManager.swift */; };
+		D079E73224FAA73B00063428 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E73124FAA73B00063428 /* StorageManager.swift */; };
+		D079E73424FAA74700063428 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079E73324FAA74700063428 /* Extensions.swift */; };
 		D07C1D8024F81BFD00FCE1FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D7F24F81BFD00FCE1FA /* AppDelegate.swift */; };
 		D07C1D8224F81BFD00FCE1FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D8124F81BFD00FCE1FA /* ViewController.swift */; };
 		D07C1D8424F81BFD00FCE1FA /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D07C1D8324F81BFD00FCE1FA /* Experience.rcproject */; };
@@ -34,6 +39,11 @@
 		D079E72524F9618300063428 /* AddClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothingViewController.swift; sourceTree = "<group>"; };
 		D079E72724F9619100063428 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D079E72924F96EB600063428 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		D079E72B24FAA20500063428 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D079E72D24FAA71900063428 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		D079E72F24FAA72E00063428 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		D079E73124FAA73B00063428 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		D079E73324FAA74700063428 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D07C1D7C24F81BFD00FCE1FA /* FashionFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07C1D7F24F81BFD00FCE1FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D07C1D8124F81BFD00FCE1FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +86,14 @@
 		D079E71424F95C7100063428 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D079E72B24FAA20500063428 /* GoogleService-Info.plist */,
 				D07C1D7F24F81BFD00FCE1FA /* AppDelegate.swift */,
 				D07C1D8124F81BFD00FCE1FA /* ViewController.swift */,
 				D07C1D8324F81BFD00FCE1FA /* Experience.rcproject */,
+				D079E72D24FAA71900063428 /* DatabaseManager.swift */,
+				D079E72F24FAA72E00063428 /* AuthManager.swift */,
+				D079E73124FAA73B00063428 /* StorageManager.swift */,
+				D079E73324FAA74700063428 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -93,8 +108,8 @@
 		D079E71624F95C8000063428 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D079E71824F95CBA00063428 /* Storyboards */,
 				D07C1D8824F81BFF00FCE1FA /* Assets.xcassets */,
+				D079E71824F95CBA00063428 /* Storyboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07C1D8C24F81BFF00FCE1FA /* LaunchScreen.storyboard in Resources */,
+				D079E72C24FAA20500063428 /* GoogleService-Info.plist in Resources */,
 				D07C1D8924F81BFF00FCE1FA /* Assets.xcassets in Resources */,
 				D07C1D8724F81BFD00FCE1FA /* Main.storyboard in Resources */,
 			);
@@ -300,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D079E71E24F95F8800063428 /* LoginViewController.swift in Sources */,
+				D079E73024FAA72E00063428 /* AuthManager.swift in Sources */,
+				D079E72E24FAA71900063428 /* DatabaseManager.swift in Sources */,
 				D07C1D8224F81BFD00FCE1FA /* ViewController.swift in Sources */,
 				D079E72624F9618300063428 /* AddClothingViewController.swift in Sources */,
 				D07C1D8024F81BFD00FCE1FA /* AppDelegate.swift in Sources */,
@@ -309,6 +327,8 @@
 				D079E72824F9619100063428 /* ProfileViewController.swift in Sources */,
 				D079E72424F9616700063428 /* ExploreViewController.swift in Sources */,
 				D079E72224F9615700063428 /* HomeViewController.swift in Sources */,
+				D079E73224FAA73B00063428 /* StorageManager.swift in Sources */,
+				D079E73424FAA74700063428 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

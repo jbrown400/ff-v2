@@ -1,4 +1,5 @@
 .DS_Store
 Pods/
 Podfile.lock
+FashionFriend/Resources/GoogleService-Info.plist
 
